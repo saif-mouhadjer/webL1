@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="green">
+
+  <header class="header stickyHeader">
+    <div class="container nav">
+      <div class="logoBox">
+        <h1 class="logo">Personal page</h1>
+        <div class="logoCircle">S</div>
+      </div>
+
+      <ul class="menu">
+        <li><a href="#about">من أنا</a></li>
+        <li><a href="#skills">المهارات</a></li>
+        <li><a href="#projects">المشاريع</a></li>
+        <li><a href="#contact">تواصل</a></li>
+      </ul>
+
+      <div class="themeButtons">
+        <button onclick="setTheme('green')">🟢</button>
+        <button onclick="setTheme('blue')">🔵</button>
+        <button onclick="setTheme('purple')">🟣</button>
+      </div>
+
+      <a href="#contact" class="startBtn">ابدأ الآن</a>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container heroContent">
+      
+      <div class="heroText">
+        <h2 class="mainTitle">أنا مهاجر سيف الدين</h2>
+        <h3 class="jobTitle">مدرب و مطور مواقع ويب </h3>
+
+        <p class="desc">
+          مدرب ومطور ويب متخصص في تصميم مواقع عصرية وسريعة، وأسعى إلى تبسيط تعلم البرمجة للمبتدئين من خلال مشاريع عملية.        </p>
+
+        <p id="typingText" class="typingText">أصمم صفحات أحترافية.</p>
+
+        <div class="heroButtons">
+          <a href="#projects" class="btn primaryBtn">شاهد أعمالي</a>
+          <a href="#contact" class="btn outlineBtn">تواصل معي</a>
+        </div>
+      </div>
+
+      <div class="heroCard card">
+        <h3>نبذة سريعة</h3>
+        <p>
+          أقدم دورات في الويب للمبتدئين، وأحب تبسيط HTML و CSS و JavaScript
+          بطريقة واضحة وسهلة.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="sectionTitle">من أنا</h2>
+
+      <div class="grid3">
+        <div class="card">
+          <h3>شهاداتي</h3>
+          <p>
+            خريج جامعي، مهتم بالتقنية، وأسعى إلى تطوير نفسي في مجال الويب والتعليم.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>اهتماماتي</h3>
+          <p>
+            تطوير مواقع الويب، التصميم الحديث، تبسيط المعلومة، وتحسين تجربة المستخدم.
+          </p>
+        </div>
+
+        <div class="card activeCard">
+          <h3>ماذا أقدم؟</h3>
+          <p>
+            أقدم دروسًا ودورات عملية للمبتدئين مع مشاريع تطبيقية تساعد الطالب على الفهم.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="sectionTitle">المهارات</h2>
+
+      <div class="grid3">
+        <div class="card skillCard">
+          <h3>HTML 📦</h3>
+          <p>
+            هيكلة الصفحة: عناوين، أقسام، نماذج، روابط، بشكل صحيح وقابل للتطوير.
+          </p>
+        </div>
+
+        <div class="card skillCard">
+          <h3>CSS 🎨</h3>
+          <p>
+            تصميم عصري: تخطيطات، ألوان، مؤثرات، حركات، وتجربة مستخدم ممتعة.
+          </p>
+        </div>
+
+        <div class="card skillCard">
+          <h3>JavaScript 🧠</h3>
+          <p>
+            تفاعل بسيط: أزرار، إظهار وإخفاء العناصر، ورسائل ديناميكية داخل الصفحة.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="sectionTitle">المشاريع</h2>
+
+      <div class="grid3">
+        <div class="card">
+          <h3>موقع CV</h3>
+          <p>صفحة شخصية للطالب تعرض معلوماته ومهاراته بشكل احترافي.</p>
+        </div>
+
+        <div class="card">
+          <h3>نموذج تواصل</h3>
+          <p>تصميم فورم أنيق مع ألوان حديثة وتجربة استخدام واضحة.</p>
+        </div>
+
+        <div class="card">
+          <h3>صفحة تعليمية</h3>
+          <p>واجهة بسيطة لعرض محتوى دورة أو شرح تقني للمبتدئين.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="sectionTitle">تواصل</h2>
+
+      <div class="contactGrid">
+        <form class="card contactForm">
+          <label>الاسم</label>
+          <input type="text" placeholder="اكتب اسمك..." />
+
+          <label>البريد</label>
+          <input type="email" placeholder="example@email.com" />
+
+          <label>الرسالة</label>
+          <textarea rows="6" placeholder="اكتب رسالتك..."></textarea>
+
+          <button type="button" id="sendBtn" class="btn primaryBtn">إرسال</button>
+        </form>
+
+        <div class="card contactText">
+          <h3>جاهز تبدأ رسالتك؟</h3>
+          <p>
+             إذا كنت طالبًا او شغوف بالبرمجة وتسعى لفهم البرمجة بشكل صحيح، أو تبحث عن توجيه في مسارك التقني، فأهلاً بك. أؤمن أن السؤال الجيد هو بداية التعلّم الحقيقي، ويسعدني دائمًا دعمك ومرافقتك خطوة بخطوة.
+              إن كان لديك مشروع، استفسار، أو رغبة في العمل معًا، لا تتردد في التواصل. اترك رسالتك 
+          </p>
+
+          <p id="toastMsg" class="toastMsg">تم الإرسال بنجاح ✅</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
